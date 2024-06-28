@@ -1,0 +1,345 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo, .name {
+    height: 40px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+/* Navigation button styling */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.faq-button, .back-button, .finish-session-button {
+    background-color: #cfe9fb;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.faq-button:hover, .back-button:hover, .finish-session-button:hover {
+    background-color: #a3d0f7;
+}
+
+/* Main content styling */
+main {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    top: -80px; 
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.light-blue {
+    color: #45ccf7;
+}
+
+.dark-blue {
+    color: #0b2e4b;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-button, .log-in-button {
+    background-color: #cfe9fb;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.sign-up-button:hover, .log-in-button:hover {
+    background-color: #a3d0f7;
+}
+
+.sign-up-button {
+    margin-right: 10px;
+}
+
+/* Footer styling */
+.waves-banner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.shark-mascot {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 80px;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #45ccf7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.main-topic-icon {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a img.topic-icon {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* User stats styling */
+.user-stats {
+    display: flex;
+    gap: 10px;
+}
+
+.user-stats .stat-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+/* Main layout styling */
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Lesson path styling */
+.lesson-path {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.lesson {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #45ccf7;
+    cursor: pointer;
+}
+
+.lesson.completed {
+    background-color: #45ccf7;
+    color: white;
+}
+
+.lesson.active {
+    border: 2px dashed #0b2e4b;
+}
+
+/* Lesson details and track record styling */
+.lesson-details, .track-record, .result-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border: 1px solid black; 
+}
+
+.start-learning-button {
+    background-color: #45ccf7;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.start-learning-button:hover {
+    background-color: #0b2e4b;
+}
+
+.analytics-box {
+    height: 240px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+.track-record-graph {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Quiz styling */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-option {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.quiz-option:hover {
+    background-color: #e1e1e1;
+}
+
+.quiz-option.selected {
+    border-color: #0b2e4b;
+    background-color: #d1e9fb;
+}
+
+.quiz-option.correct {
+    border-color: #4caf50;
+    background-color: #c8e6c9;
+}
+
+.quiz-option.wrong {
+    border-color: #f44336;
+    background-color: #ffebee;
+}
+
+.submit-button {
+    background-color: #45ccf7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0b2e4b;
+}
+
+/* Progress bar styling */
+.progress-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #45ccf7;
+    width: 0;
+}
+
+/* Result box summary content styling */
+.result-box .summary-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-box .summary-content > div {
+    width: 45%;
+}

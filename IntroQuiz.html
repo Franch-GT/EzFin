@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the web application -->
+    <title>ezFin - Intro Quiz</title>
+    
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Import CSS styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section containing the logo and navigation -->
+    <header>
+        <div class="logo-container">
+            <!-- Display the ezFin logo -->
+            <img src="EzFin Images/name.png" alt="ezFin Name" class="name">
+        </div>
+        <nav>
+            <!-- Navigation button to go back to the dashboard -->
+            <a href="dashboard.html" class="back-button">Back to Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <div class="quiz-container">
+            <!-- Container to display the result GIF -->
+            <div id="result-gif" style="display: none;">
+                <img id="result-image" src="" alt="Result GIF">
+            </div>
+            
+            <!-- Form containing the quiz questions -->
+            <form id="quiz-form">
+                <div class="quiz-question" id="question-container">
+                    <!-- Questions will be dynamically inserted here -->
+                </div>
+                <button type="button" class="submit-button" id="next-button" onclick="nextQuestion()">Next</button>
+            </form>
+
+            <!-- Progress bar to show quiz progress -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <!-- Result box to display the user's score and summary -->
+            <div id="result-box" class="result-box" style="display:none;">
+                <h3>Your Score</h3>
+                <p id="score"></p>
+                <div class="summary-box">
+                    <h3>Summary</h3>
+                    <div class="summary-content">
+                        <!-- List of topics the user aced -->
+                        <div>
+                            <p>✔ You aced:</p>
+                            <ul id="aced-topics"></ul>
+                        </div>
+                        <!-- List of topics the user needs to work on -->
+                        <div>
+                            <p>❗ Work on:</p>
+                            <ul id="work-on-topics"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button to finish the session and return to the dashboard -->
+                <a href="dashboard.html" class="finish-session-button">Finish session</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>

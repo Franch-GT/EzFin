@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the web application -->
+    <title>ezFin - Dashboard</title>
+    
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Import CSS styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section containing the topic dropdown and user stats -->
+    <header>
+        <div class="dropdown">
+            <!-- Dropdown button for selecting a topic -->
+            <button class="dropbtn">
+                <img src="EzFin Images/topic_icon.png" alt="Topic Icon" class="main-topic-icon"> Savings & Investing
+            </button>
+            <div class="dropdown-content">
+                <!-- Dropdown items for each topic -->
+                <a href="#" onclick="showBranch('personal-finance')">
+                    <img src="EzFin Images/personal_finance_icon.png" alt="Personal Finance Icon" class="topic-icon"> Personal Finance
+                </a>
+                <a href="#" onclick="showBranch('savings-investing')">
+                    <img src="EzFin Images/savings_investing_icon.png" alt="Savings & Investing Icon" class="topic-icon"> Savings & Investing
+                </a>
+                <a href="#" onclick="showBranch('economy')">
+                    <img src="EzFin Images/economy_icon.png" alt="Economy Icon" class="topic-icon"> The Economy
+                </a>
+            </div>
+        </div>
+        <div class="user-stats">
+            <!-- User stats displaying XP, lives, and user icon -->
+            <span>34 xp <img src="EzFin Images/xp_icon.png" alt="XP Icon" class="stat-icon"></span>
+            <span>4 <img src="EzFin Images/heart_icon.png" alt="Heart Icon" class="stat-icon"></span>
+            <img src="EzFin Images/user_icon.png" alt="User Icon" class="stat-icon">
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <div class="left-column">
+            <!-- Branch content for Personal Finance, initially hidden -->
+            <div id="personal-finance" class="branch" style="display:none;">
+                <div class="lesson-path">
+                    <!-- Lessons for Personal Finance -->
+                    <div class="lesson completed" onclick="showLessonContent('Intro Quiz')">
+                        <span>Intro Quiz</span>
+                    </div>
+                    <div class="lesson completed" onclick="showLessonContent('Basics')">
+                        <span>Basics</span>
+                    </div>
+                    <div class="lesson completed" onclick="showLessonContent('Quiz')">
+                        <span>Quiz</span>
+                    </div>
+                    <div class="lesson active" onclick="showLessonContent('Recap')">
+                        <span>Recap</span>
+                    </div>
+                    <div class="lesson" onclick="showLessonContent('Practice')">
+                        <span>Practice</span>
+                    </div>
+                    <div class="lesson" onclick="showLessonContent('Test')">
+                        <span>Test</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branch content for Savings & Investing, initially displayed -->
+            <div id="savings-investing" class="branch">
+                <div class="lesson-path">
+                    <!-- Lessons for Savings & Investing -->
+                    <div class="lesson completed" onclick="showLessonContent('Intro Quiz')">
+                        <span>Intro Quiz</span>
+                    </div>
+                    <div class="lesson completed" onclick="showLessonContent('Basics')">
+                        <span>Basics</span>
+                    </div>
+                    <div class="lesson completed" onclick="showLessonContent('Quiz')">
+                        <span>Quiz</span>
+                    </div>
+                    <div class="lesson active" onclick="showLessonContent('Recap')">
+                        <span>Recap</span>
+                    </div>
+                    <div class="lesson" onclick="showLessonContent('Practice')">
+                        <span>Practice</span>
+                    </div>
+                    <div class="lesson" onclick="showLessonContent('Test')">
+                        <span>Test</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branch content for The Economy, initially hidden -->
+            <div id="economy" class="branch" style="display:none;">
+                <div class="lesson-path">
+                    <!-- Lessons for The Economy -->
+                    <div class="lesson completed" onclick="showLessonContent('Intro Quiz')">
+                        <span>Intro Quiz</span>
+                    </div>
+                    <div class="lesson completed" onclick="showLessonContent('Basics')">
+                        <span>Basics</span>
+                    </div>
+                    <div class="lesson completed" onclick="showLessonContent('Quiz')">
+                        <span>Quiz</span>
+                    </div>
+                    <div class="lesson active" onclick="showLessonContent('Recap')">
+                        <span>Recap</span>
+                    </div>
+                    <div class="lesson" onclick="showLessonContent('Practice')">
+                        <span>Practice</span>
+                    </div>
+                    <div class="lesson" onclick="showLessonContent('Test')">
+                        <span>Test</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right column containing lesson details and track record -->
+        <div class="right-column">
+            <div class="lesson-details">
+                <!-- Current lesson content -->
+                <h2>Savings & Investing</h2>
+                <div id="lesson-content">
+                    <h3>Quiz</h3>
+                    <p>You will learn about:</p>
+                    <ul>
+                        <li>Title 1</li>
+                        <li>Content point 1</li>
+                        <li>Content point 2</li>
+                        <li>Content point 3</li>
+                    </ul>
+                    <a href="lesson.html" class="start-learning-button">Start learning</a>
+                </div>
+            </div>
+            <div class="track-record">
+                <!-- Track record content -->
+                <h3>Track record</h3>
+                <p>Last week you achieved personal best!</p>
+                <div class="analytics-box">
+                    <!-- Graph image for track record -->
+                    <img src="EzFin Images/trackrecord_graph.png" alt="Track Record Graph" class="track-record-graph">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
